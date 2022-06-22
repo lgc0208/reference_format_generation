@@ -1,0 +1,64 @@
+<!-- 
+    File Name:          index.html
+    Author:             lgc0208@foxmail.com
+    Version:            1.0.0
+    Description:        参考文献格式生成器，可以根据需求生成 APA 格式的参考文献和 GB/T 7714-2015 格式的参考文献
+    History:            
+        1.  Date:           2022-6-22
+            Author:         lgc0208@foxmail.com
+            Modification:   完成初步排版工作
+    
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>参考文献格式生成器</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-image: url(figure/blue-snow.png); background-size: 100%;">
+    <div class="container">
+
+        <div class="header">
+            <h1>参考文献格式生成器</h1>
+            <h2>支持标准：GB/T 7714-2015， IEEE</h2>
+        </div>
+
+
+        <div class="sidebar">
+            <p>
+                <label>格式类型:</label>
+                <select id="formatSelector"></select>
+            </p>
+            <p>
+                <label>文献类型:</label>
+                <select id="typeSelector"></select>
+            </p>
+            <div class="clean"></div>
+            <form id="inputForm"></form>
+            <div class="buttons">
+                <span class="desc">("*"为必填项)</span>
+                <input id="addBtn" type="button" value="添加" />
+            </div>
+            <div class="clean"></div>
+        </div>
+
+        <div class="main">
+            <div id="resultDiv" class="resultDiv"></div>
+            <div class="desc">(可直接复制)</div>
+        </div>
+ 
+
+        <script type="text/javascript">
+            if (document.body.clientWidth < 700) {
+                document.body.className = 'narrowStyle';
+            }
+        </script>
+
+        <script src="generation.js" type="text/javascript"></script>
+
+</body>
+
+
+</html>

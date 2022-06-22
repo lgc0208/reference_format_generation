@@ -1,0 +1,227 @@
+@charset "utf-8";
+html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+.footer{
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+}
+.sidebar{
+    float: left;
+    width: 35%;
+    background-color: transparent;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 28px;
+    height: 430px;
+}
+.main{
+    width: 60%;
+    margin-left: 35%;
+}
+.clean{
+    clear: both;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 5px 25px;
+    margin: 10px 0;
+}
+.header h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    border-bottom: 1px gray solid;
+    padding: 5px 25px;
+    margin: 10px 0;
+}
+
+.sidebar label{
+    font-size: 13px;
+    display: block;
+    float: left;
+    width: 26%;
+    text-align: right;
+    margin-right: 10px;
+}
+.sidebar label .required{
+    color: gray;
+    font-weight: bold;
+    padding-left: 3px;
+}
+.sidebar input,.sidebar select{
+    padding: 3px;
+    font-size: 13px;
+    line-height: 18px;
+    width: 60%;
+}
+.sidebar input[type="text"]{
+    width: 60%;
+}
+.sidebar input[type="button"]{
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px 12px;
+    margin: 0 5px;
+}
+.sidebar p{
+    position: relative;
+    clear: both;
+    margin: 0 10px 12px 10px;
+    padding: 0;
+}
+.sidebar .desc{
+    font-size: 13px;
+    color: gray;
+}
+.sidebar .buttons{
+    float: right;
+    line-height: 30px;
+    margin: 0 20px;
+}
+.sidebar p .desc{
+    display: block;
+    position: absolute;
+    top:8px;
+    left: 94%;
+    line-height: 20px;
+    font-size: 12px;
+    float: right;
+    width: 8px;
+    height: 8px;
+    text-indent: 24px;
+    background: rgb(252, 214, 0);
+    overflow: hidden;
+    border: 1px lightgray solid;
+    border-radius: 4px;
+}
+.sidebar p .desc:hover{
+    top: 0;
+    text-indent: 0;
+    padding: 5px 10px;
+    width: 100px;
+    height: auto;
+    overflow: visible;
+    z-index: 99;
+}
+.main .resultDiv{
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    height: 450px;
+    overflow: auto;
+    background-color: transparent;
+}
+.main .resultItem{
+    position: relative;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+.main .resultItem .delete,.main .resultItem .edit{
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: gray;
+    display: none;
+    display: none;
+    text-decoration: none;
+}
+.main .resultItem:hover .delete,.main .resultItem:hover .edit{
+    display: block;
+}
+.main .resultItem .delete:hover,.main .resultItem .edit:hover{
+    text-decoration: underline;
+}
+.main .resultItem .delete{
+    top: 1px;
+}
+.main .resultItem .edit{
+    top: 16px;
+}
+.main .referanceContent{
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 10px;
+    margin-right: 45px;
+}
+.main .referanceContent[contentEditable="true"]{
+    border: 1px lightblue solid;
+    resize: none;
+    outline: none;
+}
+.main .desc{
+    text-align: right;
+    margin: 5px 30px;
+    font-size: 13px;
+    color: gray;
+}
+
+.narrowStyle .wrapper{
+    width: 568px;
+}
+.narrowStyle .header,.narrowStyle .footer{
+    display: none;
+}
+.narrowStyle .sidebar{
+    float: none;
+    width: auto;
+    padding: 10px 5px 5px 5px;
+}
+.narrowStyle .main{
+    width: auto;
+    margin-left: 0;
+}
+.narrowStyle .sidebar p{
+    margin: 0 10px 8px 10px;
+    padding: 0;
+    float: left;
+    clear: none;
+}
+.narrowStyle .sidebar p .desc{
+    margin-left: 5px;
+    display: inline;
+    position: static;
+    float: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+.narrowStyle .sidebar p .desc:hover{
+    padding: 0;
+    width: auto
+}
+.narrowStyle .sidebar label{
+    width: 68px;
+}
+.narrowStyle .sidebar input[type="text"]{
+    width: 165px;
+}
+.narrowStyle .sidebar input[name="题目"]{
+    width: 438px;
+}
+.narrowStyle .sidebar .desc{
+    font-size: 13px;
+    color: gray;
+}
+.narrowStyle .main .resultDiv{
+    margin: 10px 0 0 0;
+    height: 280px;
+}
