@@ -450,8 +450,8 @@ Generation.ctrl = {
     onFormatChange: function () {
         var formatType = this.formatSelector.value;
         var typeName = this.typeSelector.value;
-        this.showInputs(typeName, formatType);
         this.showFormatChange();
+        this.showInputs(typeName, formatType);
     },
 
 
