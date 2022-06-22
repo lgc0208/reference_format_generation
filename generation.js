@@ -449,7 +449,7 @@ Generation.ctrl = {
     // 用户改变格式类型的响应函数
     onFormatChange: function () {
         var formatType = this.formatSelector.value;
-        var typeName = this.typeSelector.value;
+        var typeName = this.defaultType;
         this.showFormatChange();
         this.showInputs(typeName, formatType);
     },
