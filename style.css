@@ -1,38 +1,57 @@
 @charset "utf-8";
-html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
+
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 12px;
     font-weight: normal;
     padding: 0;
     margin: 0;
 }
-.wrapper{
+
+.wrapper {
     position: relative;
     width: 900px;
     margin: 0 auto;
 }
-.footer{
+
+.footer {
     text-align: center;
     font-size: 13px;
     color: gray;
 }
-.sidebar{
+
+.sidebar {
     float: left;
     width: 35%;
     background-color: transparent;
     padding: 20px 0;
     font-size: 14px;
     line-height: 28px;
-    height: 430px;
+    height: auto;
 }
-.main{
+
+.main {
     width: 60%;
     margin-left: 35%;
+    height: auto;
 }
-.clean{
+
+.clean {
     clear: both;
 }
 
-.header h1{
+.header h1 {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -40,7 +59,8 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     padding: 5px 25px;
     margin: 10px 0;
 }
-.header h2{
+
+.header h2 {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -50,54 +70,64 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     margin: 10px 0;
 }
 
-.sidebar label{
-    font-size: 13px;
+.sidebar label {
+    font-size: 16px;
     display: block;
     float: left;
     width: 26%;
+    height: 60px;
     text-align: right;
     margin-right: 10px;
 }
-.sidebar label .required{
+
+.sidebar label .required {
     color: gray;
     font-weight: bold;
     padding-left: 3px;
 }
-.sidebar input,.sidebar select{
+
+.sidebar input,
+.sidebar select {
     padding: 3px;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
     width: 60%;
 }
-.sidebar input[type="text"]{
+
+.sidebar input[type="text"] {
     width: 60%;
 }
-.sidebar input[type="button"]{
+
+.sidebar input[type="button"] {
     width: auto;
     font-size: 14px;
     line-height: 14px;
     padding: 5px 12px;
     margin: 0 5px;
 }
-.sidebar p{
+
+.sidebar p {
     position: relative;
     clear: both;
     margin: 0 10px 12px 10px;
     padding: 0;
 }
-.sidebar .desc{
+
+.sidebar .desc {
     font-size: 13px;
     color: gray;
 }
-.sidebar .buttons{
+
+.sidebar .buttons {
     float: right;
     line-height: 30px;
     margin: 0 20px;
 }
-.sidebar p .desc{
+
+.sidebar p .desc {
     display: block;
     position: absolute;
-    top:8px;
+    top: 8px;
     left: 94%;
     line-height: 20px;
     font-size: 12px;
@@ -110,7 +140,8 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     border: 1px lightgray solid;
     border-radius: 4px;
 }
-.sidebar p .desc:hover{
+
+.sidebar p .desc:hover {
     top: 0;
     text-indent: 0;
     padding: 5px 10px;
@@ -119,20 +150,24 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     overflow: visible;
     z-index: 99;
 }
-.main .resultDiv{
+
+.main .resultDiv {
     margin-left: 10px;
     padding: 10px;
     border: 1px solid lightgray;
-    height: 450px;
+    height: 80%;
     overflow: auto;
     background-color: transparent;
 }
-.main .resultItem{
+
+.main .resultItem {
     position: relative;
     border: 1px solid lightgray;
     margin-bottom: 10px;
 }
-.main .resultItem .delete,.main .resultItem .edit{
+
+.main .resultItem .delete,
+.main .resultItem .edit {
     position: absolute;
     right: 5px;
     font-size: 12px;
@@ -141,58 +176,73 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     display: none;
     text-decoration: none;
 }
-.main .resultItem:hover .delete,.main .resultItem:hover .edit{
+
+.main .resultItem:hover .delete,
+.main .resultItem:hover .edit {
     display: block;
 }
-.main .resultItem .delete:hover,.main .resultItem .edit:hover{
+
+.main .resultItem .delete:hover,
+.main .resultItem .edit:hover {
     text-decoration: underline;
 }
-.main .resultItem .delete{
+
+.main .resultItem .delete {
     top: 1px;
 }
-.main .resultItem .edit{
+
+.main .resultItem .edit {
     top: 16px;
 }
-.main .referanceContent{
+
+.main .referanceContent {
     font-size: 13px;
     line-height: 20px;
     padding: 5px 10px;
     margin-right: 45px;
 }
-.main .referanceContent[contentEditable="true"]{
+
+.main .referanceContent[contentEditable="true"] {
     border: 1px lightblue solid;
     resize: none;
     outline: none;
 }
-.main .desc{
+
+.main .desc {
     text-align: right;
     margin: 5px 30px;
     font-size: 13px;
     color: gray;
 }
 
-.narrowStyle .wrapper{
+.narrowStyle .wrapper {
     width: 568px;
 }
-.narrowStyle .header,.narrowStyle .footer{
+
+.narrowStyle .header,
+.narrowStyle .footer {
     display: none;
 }
-.narrowStyle .sidebar{
+
+.narrowStyle .sidebar {
     float: none;
     width: auto;
     padding: 10px 5px 5px 5px;
 }
-.narrowStyle .main{
+
+.narrowStyle .main {
     width: auto;
     margin-left: 0;
 }
-.narrowStyle .sidebar p{
+
+.narrowStyle .sidebar p {
     margin: 0 10px 8px 10px;
     padding: 0;
     float: left;
     clear: none;
 }
-.narrowStyle .sidebar p .desc{
+
+.narrowStyle .sidebar p .desc {
     margin-left: 5px;
     display: inline;
     position: static;
@@ -204,24 +254,30 @@ html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6{
     border: none;
     border-radius: 0;
 }
-.narrowStyle .sidebar p .desc:hover{
+
+.narrowStyle .sidebar p .desc:hover {
     padding: 0;
     width: auto
 }
-.narrowStyle .sidebar label{
+
+.narrowStyle .sidebar label {
     width: 68px;
 }
-.narrowStyle .sidebar input[type="text"]{
+
+.narrowStyle .sidebar input[type="text"] {
     width: 165px;
 }
-.narrowStyle .sidebar input[name="题目"]{
+
+.narrowStyle .sidebar input[name="题目"] {
     width: 438px;
 }
-.narrowStyle .sidebar .desc{
+
+.narrowStyle .sidebar .desc {
     font-size: 13px;
     color: gray;
 }
-.narrowStyle .main .resultDiv{
+
+.narrowStyle .main .resultDiv {
     margin: 10px 0 0 0;
     height: 280px;
 }
